@@ -898,6 +898,9 @@ void GazeboMavlinkInterface::SendSensorMessages()
 
   sensor_msg.fields_updated = SensorSource::ACCEL | SensorSource::GYRO;
 
+  // always send temperature (given by the barometer plugin)
+  sensor_msg.temperature = temperature_;
+
   // send only mag data
   if (mag_updated_) {
     ignition::math::Quaterniond q_gb = q_gr*q_br.Inverse();
@@ -915,7 +918,6 @@ void GazeboMavlinkInterface::SendSensorMessages()
 
   // send only baro data
   if (baro_updated_) {
-    sensor_msg.temperature = temperature_;
     sensor_msg.abs_pressure = abs_pressure_;
     sensor_msg.pressure_alt = pressure_alt_;
     sensor_msg.fields_updated = sensor_msg.fields_updated | SensorSource::BARO;

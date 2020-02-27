@@ -134,7 +134,7 @@ enum class SensorSource {
   ACCEL		= 0b111,
   GYRO		= 0b111000,
   MAG		= 0b111000000,
-  BARO		= 0b1101000000000,
+  BARO		= 0b101000000000,
   DIFF_PRESS	= 0b10000000000,
 };
 
