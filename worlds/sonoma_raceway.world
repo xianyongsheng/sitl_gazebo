@@ -9,10 +9,12 @@
       <uri>model://sonoma_raceway</uri>
       <pose>-295 150 -7 0 0</pose>
     </include>
-    <plugin name="gps_origin" filename="libgazebo_gps_origin_plugin.so">
-      <homeLatitude>38.161479</homeLatitude>
-      <homeLongitude>-122.454630</homeLongitude>
-    </plugin>
+    <shperical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>38.161479</latitude_deg>
+      <longitude_deg>-122.454630</longitude_deg>
+      <longitude_deg>488.0</longitude_deg>
+    </shperical_coordinates>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
       <ode>
