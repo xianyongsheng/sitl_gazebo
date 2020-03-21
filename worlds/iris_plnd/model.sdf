@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='iris_plnd'>
+    <model name='qrcode'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2 2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>2 2 0.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://qrcode/materials/scripts</uri>
+              <uri>model://qrcode/materials/textures</uri>
+              <name>vrc/qrcode</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+      <pose frame=''>0 4e-06 0 0 -0 0</pose>
+    </model>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
