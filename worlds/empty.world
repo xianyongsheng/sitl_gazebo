@@ -10,6 +10,10 @@
       <uri>model://ground_plane</uri>
     </include>
     <include>
+      <uri>model://qrcode</uri>
+      <pose>-2 -2 0 0 0 0.01</pose>
+    </include>
+    <include>
       <uri>model://asphalt_plane</uri>
     </include>
     <physics name='default_physics' default='0' type='ode'>
