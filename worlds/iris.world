@@ -15,7 +15,11 @@
     </include>
     <include>
       <uri>model://qrcode</uri>
+<<<<<<< HEAD
       <pose>2.01 1.98 0.83 0 0 1.14</pose>
+=======
+      <pose>1.01 0.98 0.83 0 0 1.14</pose>
+>>>>>>> pld2
     </include>
     <include>
       <uri>model://iris</uri>
