@@ -15,7 +15,7 @@
     </include>
     <include>
       <uri>model://qrcode</uri>
-      <pose>1.01 0.98 0.83 0 0 1.14</pose>
+      <pose>-2 -2 0 0 0 0.01</pose>
     </include>
     <include>
       <uri>model://iris</uri>
