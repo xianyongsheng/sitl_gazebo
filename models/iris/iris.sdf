@@ -18,7 +18,7 @@
 
     <include>
       <uri>model://cameracy</uri>
-      <pose frame=''>0 0 -0.08 0 1.57 0</pose>
+      <pose frame=''>0 0 -0.04 0 1.57 0</pose>
     </include>
     <joint name="cameracy" type="revolute">
       <child>cameracy::link</child>
