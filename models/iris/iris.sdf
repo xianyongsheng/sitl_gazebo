@@ -1,44 +1,5 @@
 <sdf version='1.6'>
   <model name='iris'>
-    <include>
-      <uri>model://lidar</uri>
-      <pose>-0.12 0 0 0 3.1415 0</pose>
-    </include>
-    <joint name="lidar_joint" type="revolute">
-      <child>lidar::link</child>
-      <parent>iris::base_link</parent>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <upper>0</upper>
-          <lower>0</lower>
-        </limit>
-      </axis>
-    </joint>
-
-    <include>
-      <uri>model://cameracy</uri>
-      <pose frame=''>0 0 -0.04 0 1.57 0</pose>
-    </include>
-    <joint name="cameracy" type="revolute">
-      <child>cameracy::link</child>
-      <parent>iris::base_link</parent>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>0</lower>
-          <upper>0</upper>
-          <effort>0</effort>
-          <velocity>0</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-
     <link name='base_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
@@ -458,7 +419,7 @@
     </plugin>
     <plugin name='gps_plugin' filename='libgazebo_gps_plugin.so'>
       <robotNamespace/>
-      <gpsNoise>3</gpsNoise>
+      <gpsNoise>1</gpsNoise>
     </plugin>
     <plugin name='magnetometer_plugin' filename='libgazebo_magnetometer_plugin.so'>
       <robotNamespace/>
